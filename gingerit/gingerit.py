@@ -13,7 +13,7 @@ class GingerIt(object):
         self.lang = "US"
 
     def parse(self, text, verify=True):
-        session = requests.Session()
+        cloudscraper.create_scraper()
         request = session.get(
             self.url,
             params={
